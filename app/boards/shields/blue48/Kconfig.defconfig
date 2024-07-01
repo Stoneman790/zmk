@@ -1,0 +1,20 @@
+if SHIELD_BLUE48_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Blue48"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_BLUE488_LEFT
+
+if SHIELD_BLUE48_LEFT || SHIELD_BLUE48_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_RGB_UNDERGLOW
+    select WS2812_STRIP
+    select SPI
+
+endif # SHIELD_BLUE48_LEFT || SHIELD_BLUE48_RIGHT
