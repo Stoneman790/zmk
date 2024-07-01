@@ -2,13 +2,15 @@ name: Build
 
 on:
   push:
-    paths:
-      - ".github/workflows/build.yml"
-      - "app/**"
+    branches:
+      - main
+      - develop
+      - feature/*
   pull_request:
-    paths:
-      - ".github/workflows/build.yml"
-      - "app/**"
+    branches:
+      - main
+      - develop
+      - feature/*
   schedule:
     - cron: "22 4 * * *"
 
