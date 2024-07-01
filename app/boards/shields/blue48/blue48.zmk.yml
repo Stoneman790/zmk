@@ -1,10 +1,12 @@
 file_format: "1"
-id: blue48
-name: Blue48 Custom Keyboard
-type: shield
-requires: [nicenano_v2]  # Change to your microcontroller
+id: "blue48"
+name: "Blue48"
+type: "shield"
+requires:
+  - "nicenano_v2"
 features:
-  - keys
+  - "keys"
 siblings:
-  - blue48_left
-  - blue48_right
+  - "blue48_left"
+  - "blue48_right"
+url: "https://example.com/blue48" # Add your keyboard's URL here
